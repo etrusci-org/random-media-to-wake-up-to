@@ -2,20 +2,20 @@
 
 
 APP.videos = [
-    "ZXsQAXx_ao0",
-    "rzCCahBMwrk",
-    "INxh_eCFEpo",
-    "l4LFawdddFE",
-    "rdlvPe959Ck",
-    "3FwQzeG7hoM",
-    "TDE0EatumPg",
-    "bx7Yd39DShg",
-    "rQtChq8GARw",
-    "yURRmWtbTbo",
-    "_gmmvFBGkjc",
-    "ZkivTBAMuaE",
-    "F-TYRhBHbwc",
-    "sNUSBi8x4tg",
-    "R8AOAap6_k4",
-    "un3NkWnHl9Q",
+    "3FwQzeG7hoM", // Get Lucky - Daft Punk // Saxophone Solo
+    "_gmmvFBGkjc", // Jamal - Keep It Real (Official Video) [Explicit]
+    "bx7Yd39DShg", // Wamdue Project - King Of My Castle [1999]
+    "F-TYRhBHbwc", // Disclosure - Ultimatum (Audio) ft. Fatoumata Diawara
+    "INxh_eCFEpo", // Hanna - Sometimes (Karol XVII & MB Valence Remix)
+    "l4LFawdddFE", // Gabriel Garzón-Montano - Golden Wings [Official Video]
+    "R8AOAap6_k4", // Womack & Womack - Teardrops (Official Video)
+    "rdlvPe959Ck", // Roger Sanchez - Another Chance (Directors Cut)
+    "rQtChq8GARw", // Massive Töne - Das und Dies (Remix)
+    "rzCCahBMwrk", // Vy Pole - V
+    "sNUSBi8x4tg", // Elvis Presley - A Little Less Conversation (Original Studio Version)
+    "TDE0EatumPg", // Blumentopf - Irgendwie Lieb' ich das 2
+    "un3NkWnHl9Q", // Busta Rhymes - Gimme Some More (Official Video) [Explicit]
+    "yURRmWtbTbo", // Michael Jackson - Don’t Stop 'Til You Get Enough (Official Video)
+    "ZkivTBAMuaE", // Atari Teenage Riot - Revolution Action
+    "ZXsQAXx_ao0", // Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)
 ]
