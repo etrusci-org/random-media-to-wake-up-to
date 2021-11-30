@@ -18,4 +18,7 @@ APP.videos = [
     "yURRmWtbTbo", // Michael Jackson - Don’t Stop 'Til You Get Enough (Official Video)
     "ZkivTBAMuaE", // Atari Teenage Riot - Revolution Action
     "ZXsQAXx_ao0", // Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)
+    "ulTuqFamxPQ", // Kobacchi Ryo - Bilal (ft.HAL-D)
+    "l8OE8kg7DoQ", // DJ Shadow - Urgent, Important, Please Read (feat. Rockwell Knuckles, Tef Poe, Daemon) [HQ Audio]
+    "qwWVbcdE50k", // Demuja - Move
 ]
