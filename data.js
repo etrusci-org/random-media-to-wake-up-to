@@ -21,4 +21,8 @@ APP.videos = [
     "ulTuqFamxPQ", // Kobacchi Ryo - Bilal (ft.HAL-D)
     "l8OE8kg7DoQ", // DJ Shadow - Urgent, Important, Please Read (feat. Rockwell Knuckles, Tef Poe, Daemon) [HQ Audio]
     "8F9n5-9Cxuw", // Demuja - Move
+    "RFE66SEwo7Y", // Gift of Gab - The Ride of your Life
+    "ETZJo4TcbQk", // Legend Of 1900 Piano Dual "Enduring Movement"
+    "HzpCcNdhy5w", // Modjo - Lady (Hear Me Tonight)
+    "s5GPuBjOEcA", // A-Trak - DJs Gotta Dance More ft. Todd Terry (Official Music Video)
 ]
