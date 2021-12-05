@@ -25,4 +25,5 @@ APP.videos = [
     "ETZJo4TcbQk", // Legend Of 1900 Piano Dual "Enduring Movement"
     "HzpCcNdhy5w", // Modjo - Lady (Hear Me Tonight)
     "s5GPuBjOEcA", // A-Trak - DJs Gotta Dance More ft. Todd Terry (Official Music Video)
+    "mFSRCG4DrmI", // Newen Afrobeat feat. Seun Kuti & Cheick Tidiane Seck - Opposite People (Fela Kuti)
 ]
