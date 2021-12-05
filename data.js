@@ -20,5 +20,5 @@ APP.videos = [
     "ZXsQAXx_ao0", // Shia LaBeouf "Just Do It" Motivational Speech (Original Video by LaBeouf, Rönkkö & Turner)
     "ulTuqFamxPQ", // Kobacchi Ryo - Bilal (ft.HAL-D)
     "l8OE8kg7DoQ", // DJ Shadow - Urgent, Important, Please Read (feat. Rockwell Knuckles, Tef Poe, Daemon) [HQ Audio]
-    "qwWVbcdE50k", // Demuja - Move
+    "8F9n5-9Cxuw", // Demuja - Move
 ]
