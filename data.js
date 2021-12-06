@@ -4,7 +4,6 @@
 APP.videos = [
     "3FwQzeG7hoM", // Get Lucky - Daft Punk // Saxophone Solo
     "_gmmvFBGkjc", // Jamal - Keep It Real (Official Video) [Explicit]
-    "bx7Yd39DShg", // Wamdue Project - King Of My Castle [1999]
     "F-TYRhBHbwc", // Disclosure - Ultimatum (Audio) ft. Fatoumata Diawara
     "INxh_eCFEpo", // Hanna - Sometimes (Karol XVII & MB Valence Remix)
     "l4LFawdddFE", // Gabriel Garzón-Montano - Golden Wings [Official Video]
@@ -28,4 +27,5 @@ APP.videos = [
     "mFSRCG4DrmI", // Newen Afrobeat feat. Seun Kuti & Cheick Tidiane Seck - Opposite People (Fela Kuti)
     "ngFJlz6jJ3o", // Boddhi Musique - For the Love of Soulful
     "nZ5kwd3-Tr0", // Extra produktionen - The mothership
+    "DXSyQjppqG0", // Wamdue Project - King of My Castle (Official HD Video)
 ]
