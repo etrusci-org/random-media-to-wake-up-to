@@ -22,7 +22,7 @@ const APP = {
         APP.queue.splice(rnd_key, 1)
         APP.ele_vid.src = `https://www.youtube-nocookie.com/embed/${rnd_vid}`
         if (APP.queue.length > 0) {
-            APP.ele_qmsg.innerHTML = `CLICK HERE TO LOAD MORE &middot;&middot;&middot; ${APP.queue.length} VIDEOS LEFT`
+            APP.ele_qmsg.innerHTML = `CLICK HERE TO LOAD ANOTHER VIDEO &middot;&middot;&middot; ${APP.queue.length} VIDEOS LEFT`
         }
         else {
             APP.ele_qmsg.innerHTML = `YOU'VE SEEN IT ALL FOR NOW &middot;&middot;&middot; RELOAD QUEUE`
