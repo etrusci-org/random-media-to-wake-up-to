@@ -22,10 +22,10 @@ APP.videos = [
     "8F9n5-9Cxuw", // Demuja - Move
     "RFE66SEwo7Y", // Gift of Gab - The Ride of your Life
     "ETZJo4TcbQk", // Legend Of 1900 Piano Dual "Enduring Movement"
-    "HzpCcNdhy5w", // Modjo - Lady (Hear Me Tonight)
     "s5GPuBjOEcA", // A-Trak - DJs Gotta Dance More ft. Todd Terry (Official Music Video)
     "mFSRCG4DrmI", // Newen Afrobeat feat. Seun Kuti & Cheick Tidiane Seck - Opposite People (Fela Kuti)
     "ngFJlz6jJ3o", // Boddhi Musique - For the Love of Soulful
     "nZ5kwd3-Tr0", // Extra produktionen - The mothership
     "DXSyQjppqG0", // Wamdue Project - King of My Castle (Official HD Video)
+    "mMfxI3r_LyA", // Modjo - Lady (Hear Me Tonight) (Official Video)
 ]
