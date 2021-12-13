@@ -46,4 +46,9 @@ APP.data = [
     { platform: 'yt', slug: 'nZ5kwd3-Tr0', title: `Extra produktionen - The mothership` },
     { platform: 'yt', slug: 'DXSyQjppqG0', title: `Wamdue Project - King of My Castle (Official HD Video)` },
     { platform: 'yt', slug: 'mMfxI3r_LyA', title: `Modjo - Lady (Hear Me Tonight) (Official Video)` },
+    { platform: 'yt', slug: 'oVgjC5Gw8y0', title: `The Horrorist - One Night In New York City (Uncensored)` },
+    { platform: 'yt', slug: 'sYnrtGCgsM8', title: `Kruder & Dorfmeister - Trans Fatty Acid` },
+    { platform: 'yt', slug: 'F1O8tBPZecA', title: `Johannes Heil - Die Zahl des Tieres (A1)` },
+    { platform: 'yt', slug: '-4Cm90l5egE', title: `LSB - Overthinking (Ft. Sian Sanderson) (Official Video)` },
+    // { platform: '', slug: '', title: `` },
 ]
