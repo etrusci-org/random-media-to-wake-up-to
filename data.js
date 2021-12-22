@@ -18,8 +18,10 @@ title:
 */
 
 APP.data = [
+    // { platform: '', slug: '', title: `` },
     { platform: 'bc', slug: '1925673495', title: `Childhood - Love Saw It` },
-    { platform: 'sc', slug: '922777060', title: `SPARTALIEN & Esblendet - Rainbows & Unicorns` },
+    { platform: 'bc', slug: '2939601556', title: `Ugly Heroes - Today Right Now` },
+    { platform: 'bc', slug: '2223839995', title: `SPARTALIEN & Esblendet - Rainbows & Unicorns` },
     { platform: 'yt', slug: '3FwQzeG7hoM', title: `Get Lucky - Daft Punk // Saxophone Solo` },
     { platform: 'yt', slug: '_gmmvFBGkjc', title: `Jamal - Keep It Real (Official Video) [Explicit]` },
     { platform: 'yt', slug: 'F-TYRhBHbwc', title: `Disclosure - Ultimatum (Audio) ft. Fatoumata Diawara` },
@@ -50,5 +52,4 @@ APP.data = [
     { platform: 'yt', slug: 'sYnrtGCgsM8', title: `Kruder & Dorfmeister - Trans Fatty Acid` },
     { platform: 'yt', slug: 'F1O8tBPZecA', title: `Johannes Heil - Die Zahl des Tieres (A1)` },
     { platform: 'yt', slug: '-4Cm90l5egE', title: `LSB - Overthinking (Ft. Sian Sanderson) (Official Video)` },
-    // { platform: '', slug: '', title: `` },
 ]
