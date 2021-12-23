@@ -10,6 +10,7 @@ APP.main = () => {
 
     // Register event handlers
     APP.ui.ctrl_loadmedia.onclick = APP.load_random_media
+    // APP.ui.ctrl_printlist.onclick = APP.print_list
 
     // Init progress bar
     APP.ui.pbar.value = 0
@@ -35,15 +36,15 @@ APP.load_random_media = () => {
     let embed_code = ``
     switch (media.platform) {
         case 'bc':
-            embed_code = `<iframe class="bc" src="https://bandcamp.com/EmbeddedPlayer/track=${media.slug}/size=large"></iframe> (source: Bandcamp)`
+            embed_code = `<iframe class="bc" src="https://bandcamp.com/EmbeddedPlayer/track=${media.slug}/size=large"></iframe> source: <a href="https://bandcamp.com/search?q=${encodeURIComponent(media.title)}" target="_blank">Bandcamp</a>`
         break
 
         case 'sc':
-            embed_code = `<iframe class="sc" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${media.slug}"></iframe> (source: SoundCloud)`
+            embed_code = `<iframe class="sc" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${media.slug}"></iframe> source: <a href="https://soundcloud.com/search?q=${encodeURIComponent(media.title)}" target="_blank">SoundCloud</a>`
         break
 
         case 'yt':
-            embed_code = `<iframe class="yt" src="https://www.youtube.com/embed/${media.slug}" allow="encrypted-media;"></iframe> (source: YouTube)`
+            embed_code = `<iframe class="yt" src="https://www.youtube.com/embed/${media.slug}" allow="encrypted-media;"></iframe> source: <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(media.title)}" target="_blank">YouTube</a>`
         break
 
         // TODO: add more platforms which do not require the user to login to listen
@@ -59,3 +60,12 @@ APP.load_random_media = () => {
     APP.ui.pbar.value = APP.data.length - APP.queue.length
     APP.ui.pbar_label.innerHTML = `${APP.ui.pbar.value}/${APP.ui.pbar.max}`
 }
+
+// APP.print_list = () => {
+//     APP.ui.ctrl_printlist.style.display = 'none'
+//     APP.data.forEach((media) => {
+//         let line = document.createElement('p')
+//         line.innerHTML = `<a href="https://duckduckgo.com/?q=${encodeURIComponent(media.title)}" target="_blank">${media.title}</a>`
+//         document.querySelector('.footer').append(line)
+//     })
+// }
