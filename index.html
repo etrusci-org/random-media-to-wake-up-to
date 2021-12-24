@@ -4,30 +4,34 @@
     <title>random media to wake up to</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="lib/app.css">
 </head>
 <body>
-    <noscript><div>[!] THIS WON'T WORK WITHOUT JAVASCRIPT [!]</div></noscript>
     <div class="app">
+        <noscript><div>[!] THIS WON'T WORK WITHOUT JAVASCRIPT [!]</div></noscript>
+
         <div class="box">
-            <span class="ui" data-key="pbar_label"></span>
-            <progress class="ui" data-key="pbar"></progress><br>
-            <button class="ui" data-key="ctrl_loadmedia">&darr; load random media &darr;</button>
+            <span data-uikey="pbarLabel"></span>
+            <progress data-uikey="pbar"></progress><br>
+            <button data-uikey="ctrlLoadRandomMedia">&darr; load random media &darr;</button>
         </div>
+
         <div class="box">
-            <h1 class="ui" data-key="mediatitle"></h1>
+            <h1 data-uikey="mediaTitle"></h1>
         </div>
+
         <div class="box">
-            <div class="ui" data-key="mediaembed"></div>
+            <div data-uikey="mediaEmbedCode"></div>
         </div>
+
         <div class="footer">
-            <p>{<a href="https://github.com/etrusci-org/random-media-to-wake-up-to/blob/main/data.js" target="_blank">data</a>}</p>
-            <!-- <p><button class="ui" data-key="ctrl_printlist">I just want a randomless list!</button></p> -->
+            <p>{<a href="lib/data.js" target="_blank">data</a>}</p>
+            <!-- <p><button data-uikey="ctrl_printlist">I just want a randomless list!</button></p> -->
         </div>
     </div>
-    <script src="app.js"></script>
-    <script src="core.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+
+    <script src="lib/app.js"></script>
+    <script src="lib/data.js"></script>
+    <script src="lib/main.js"></script>
 </body>
 </html>
