@@ -24,6 +24,7 @@ div.box {
 div.footer {
     margin: 5rem 0 0 0;
     font-size: .85rem;
+    font-style: italic;
 }
 
 h1 {
