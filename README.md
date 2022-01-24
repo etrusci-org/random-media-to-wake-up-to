@@ -11,4 +11,4 @@ A modern web-browser (as of 2021).
 
 ## Usage
 
-Open [index.html](https://etrusci-org.github.io/random-media-to-wake-up-to) in your web-browser.
+Open [index.html](https://etrusci.org/tool/random-media-to-wake-up-to) in your web-browser.
