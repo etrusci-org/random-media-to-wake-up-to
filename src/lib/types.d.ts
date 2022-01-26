@@ -2,8 +2,9 @@ export type AppType = {
     debug: boolean
     queue: MediaListType
     ui: {
-        loadRandomMedia: HTMLButtonElement | null
+        app: HTMLDivElement | null
         mediaEmbed: HTMLDivElement | null
+        loadRandomMedia: HTMLButtonElement | null
         mediaSelect: HTMLSelectElement | null
     }
     main(): void

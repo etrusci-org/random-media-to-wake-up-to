@@ -4,27 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="TODO">
-    <link rel="stylesheet" href="style.min.css">
+
+    <!--[if lt IE 11]>
+        <link rel="preload" href="res/montserrat-v21-latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <![endif]-->
+
+    <link rel="preload" href="res/montserrat-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="res/style.min.css">
+
     <title>Random Media To Wake Up To</title>
 </head>
 <body>
-    <!-- Load random media -->
-    <button class="loadRandomMedia">random</button>
+    <noscript>This app requires JavaScript.</noscript>
 
-    <!-- Select media -->
-    <select class="mediaSelect">
-        <option selected disabled>or select your favorites ...</option>
-    </select>
+    <div class="app">
+        <header>
+            <h1>Random Media To Wake Up To</h1>
+        </header>
 
-    <hr>
+        <main>
+            <div class="ctrl">
+                <button class="loadRandomMedia">[?/?]</button>
+                <select class="mediaSelect">
+                    <option selected disabled>or select your favorites ...</option>
+                </select>
+            </div>
 
-    <!-- Media embed -->
-    <div class="mediaEmbed"></div>
+            <div class="mediaEmbed">
+            </div>
+        </main>
 
-    <hr>
+        <footer>
+            Wake up to curated (mostly music) media (which has a certain mood).<br>
+            New media will be added <a href="#" target="_blank">over time</a>.
+        </footer>
 
-    <!-- Magic -->
-    <script src="main.js" type="module"></script>
+    </div>
+
+    <script src="lib/main.js" type="module"></script>
 </body>
 </html>

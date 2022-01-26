@@ -4,15 +4,21 @@ import { MEDIA } from './data.js'
 
 export const APP: AppType = {
     debug: true,
-    queue: [],
-
+    queue: [ ...MEDIA ],
     ui: {
+        app: document.querySelector('.app'),
         loadRandomMedia: document.querySelector('.loadRandomMedia'),
         mediaEmbed: document.querySelector('.mediaEmbed'),
         mediaSelect: document.querySelector('.mediaSelect'),
     },
 
     main() {
+        if (!this.ui.app) {
+            return
+        }
+
+        this.ui.app.style.display = 'block'
+
         this.ui.loadRandomMedia?.addEventListener('click', () => this.loadMedia())
         this.ui.mediaSelect?.addEventListener('change', () => this.loadMedia(true))
 
@@ -20,7 +26,8 @@ export const APP: AppType = {
             if (MEDIA[k]) {
                 let opt = document.createElement('option')
                 opt.value = k
-                opt.innerHTML = `${MEDIA[k]?.title.substring(0, 50)}`
+                opt.innerHTML = truncStr(`${MEDIA[k]?.title}`, 40)
+                opt.title = `${MEDIA[k]?.title}`
                 this.ui.mediaSelect?.append(opt)
             }
         }
@@ -29,7 +36,9 @@ export const APP: AppType = {
     },
 
     loadMedia(selected = false) {
-        if (!this.ui.mediaEmbed || !this.ui.mediaSelect || !this.ui.loadRandomMedia) {
+        if (!this.ui.mediaEmbed ||
+            !this.ui.mediaSelect ||
+            !this.ui.loadRandomMedia) {
             return
         }
 
@@ -49,10 +58,11 @@ export const APP: AppType = {
 
         let embedCode = this.getEmbedCode(m)
 
-        if (embedCode) {
+        if (m && embedCode) {
             let queuePos = `${MEDIA.length - this.queue.length}`.padStart(`${MEDIA.length}`.length, '0')
-            this.ui.loadRandomMedia.innerHTML = `random [${queuePos}/${MEDIA.length}]`
-            this.ui.mediaEmbed.innerHTML = embedCode
+            this.ui.loadRandomMedia.innerHTML = `load random (${queuePos}/${MEDIA.length})`
+            let embed = `<h2>${m.title}</h2> ${embedCode}`
+            this.ui.mediaEmbed.innerHTML = embed
         }
     },
 
@@ -77,7 +87,7 @@ export const APP: AppType = {
         let embedCode = null
 
         if (this.debug) {
-            return `<code>${JSON.stringify(media)}</code>`
+            return `<iframe class="${media.platform}">dummy iframe for debugging</iframe> <code>${JSON.stringify(media)}</code>`
         }
 
         switch (media.platform) {
@@ -98,4 +108,9 @@ export const APP: AppType = {
 
         return embedCode
     },
+}
+
+
+function truncStr(str: string, length: number, end: string = '...'): string {
+    return (str.length > length + end.length) ? `${str.substring(0, length)}${end}` : str
 }
