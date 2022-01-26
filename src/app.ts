@@ -9,7 +9,6 @@ export const APP: AppType = {
     ui: {
         loadRandomMedia: document.querySelector('.loadRandomMedia'),
         mediaEmbed: document.querySelector('.mediaEmbed'),
-        queueStatus: document.querySelector('.queueStatus'),
         mediaSelect: document.querySelector('.mediaSelect'),
     },
 
@@ -21,8 +20,7 @@ export const APP: AppType = {
             if (MEDIA[k]) {
                 let opt = document.createElement('option')
                 opt.value = k
-                // @ts-ignore
-                opt.innerHTML = `${MEDIA[k].title.substring(0, 50)}`
+                opt.innerHTML = `${MEDIA[k]?.title.substring(0, 50)}`
                 this.ui.mediaSelect?.append(opt)
             }
         }
@@ -31,7 +29,7 @@ export const APP: AppType = {
     },
 
     loadMedia(selected = false) {
-        if (!this.ui.mediaEmbed || !this.ui.queueStatus) {
+        if (!this.ui.mediaEmbed || !this.ui.mediaSelect || !this.ui.loadRandomMedia) {
             return
         }
 
@@ -42,20 +40,19 @@ export const APP: AppType = {
         let m = null
 
         if (!selected) {
-            this.ui.queueStatus.style.display = ''
+            this.ui.mediaSelect.selectedIndex = 0
             m = this.getRandomMedia()
         }
         else {
-            this.ui.queueStatus.style.display = 'none'
-            // @ts-ignore
-            m = MEDIA[this.ui.mediaSelect?.value]
+            m = MEDIA[parseInt(this.ui.mediaSelect?.value)]
         }
 
         let embedCode = this.getEmbedCode(m)
 
         if (embedCode) {
+            let queuePos = `${MEDIA.length - this.queue.length}`.padStart(`${MEDIA.length}`.length, '0')
+            this.ui.loadRandomMedia.innerHTML = `random [${queuePos}/${MEDIA.length}]`
             this.ui.mediaEmbed.innerHTML = embedCode
-            this.ui.queueStatus.innerHTML = `[${MEDIA.length - this.queue.length}/${MEDIA.length}]`
         }
     },
 

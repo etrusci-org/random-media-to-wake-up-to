@@ -4,11 +4,16 @@ import { MediaListType } from "./types"
 /**
  * MEDIA Guidelines
  *
- * Keep the list sorted ascending by title.
+ * - Keep the red thread.
+ * - Keep the list sorted ascending by title.
  *
  * title:
+ *   - Should not be cryptic.
+ *   - Format it to Title Case.
+ *   - Remove emitocons and other cosmetics.
  *   - If it's music: <artist> - <song>
  *   - If it's something else: keep it short
+ *   - Put it in backticks.
  *
  * platform:
  *   - bandcamp: for media from https://bandcamp.com
@@ -16,7 +21,8 @@ import { MediaListType } from "./types"
  *   - youtube: for media from https://youtube.com
  *
  * slug:
- *   This is whatever we need to create an embed code.
+ *   - This is the string we need to create an embed code for the platform.
+ *   - Put it in backticks.
  */
 export const MEDIA: MediaListType = [
     { title: `14KT - My Heart & I`, platform: 'youtube', slug: `jrWPGEMQf5k` },
@@ -30,7 +36,7 @@ export const MEDIA: MediaListType = [
     { title: `Attame - 90's Hiphop Set`, platform: 'youtube', slug: `dkrpqUyiZgA` },
     { title: `Blumentopf - Irgendwie Lieb' ich das 2`, platform: 'youtube', slug: `TDE0EatumPg` },
     { title: `Boddhi Musique - For the Love of Soulful`, platform: 'youtube', slug: `ngFJlz6jJ3o` },
-    { title: `Boom Baptist - King of My Castle`, platform: 'youtube', slug: `a5EGd5u6FFw` },
+    { title: `BoomBaptist - King of My Castle`, platform: 'youtube', slug: `a5EGd5u6FFw` },
     { title: `BoomBaptist - Toucan Wing`, platform: 'youtube', slug: `IyYv7GP7hrk` },
     { title: `Busta Rhymes - Gimme Some More`, platform: 'youtube', slug: `un3NkWnHl9Q` },
     { title: `Childhood - Love Saw It`, platform: 'bandcamp', slug: `1925673495` },
@@ -67,7 +73,7 @@ export const MEDIA: MediaListType = [
     { title: `L'indécis - Soulful (Chillhop Live Session)`, platform: 'youtube', slug: `-NxV_nqD1N0` },
     { title: `Legend Of 1900 - Piano Duel Enduring Movement`, platform: 'youtube', slug: `ETZJo4TcbQk` },
     { title: `LSB - Overthinking`, platform: 'youtube', slug: `-4Cm90l5egE` },
-    { title: `Massive Töne - Das und Dies`, platform: 'youtube', slug: `rQtChq8GARw` },
+    { title: `Massive Töne - Das und Dies (Remix)`, platform: 'youtube', slug: `rQtChq8GARw` },
     { title: `Michael Jackson - Don't Stop 'Til You Get Enough`, platform: 'youtube', slug: `yURRmWtbTbo` },
     { title: `Michael Jackson - Leave Me Alone`, platform: 'youtube', slug: `crbFmpezO4A` },
     { title: `Michel Cleis - La Mezcla (Paul Kalkbrenner Remix)`, platform: 'youtube', slug: `uAYEz5tiLHE` },

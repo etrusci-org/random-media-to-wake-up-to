@@ -5,26 +5,25 @@ export const APP = {
     ui: {
         loadRandomMedia: document.querySelector('.loadRandomMedia'),
         mediaEmbed: document.querySelector('.mediaEmbed'),
-        queueStatus: document.querySelector('.queueStatus'),
         mediaSelect: document.querySelector('.mediaSelect'),
     },
     main() {
-        var _a, _b, _c;
+        var _a, _b, _c, _d;
         (_a = this.ui.loadRandomMedia) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => this.loadMedia());
         (_b = this.ui.mediaSelect) === null || _b === void 0 ? void 0 : _b.addEventListener('change', () => this.loadMedia(true));
         for (const k in MEDIA) {
             if (MEDIA[k]) {
                 let opt = document.createElement('option');
                 opt.value = k;
-                opt.innerHTML = `${MEDIA[k].title.substring(0, 50)}`;
-                (_c = this.ui.mediaSelect) === null || _c === void 0 ? void 0 : _c.append(opt);
+                opt.innerHTML = `${(_c = MEDIA[k]) === null || _c === void 0 ? void 0 : _c.title.substring(0, 50)}`;
+                (_d = this.ui.mediaSelect) === null || _d === void 0 ? void 0 : _d.append(opt);
             }
         }
         this.loadMedia();
     },
     loadMedia(selected = false) {
         var _a;
-        if (!this.ui.mediaEmbed || !this.ui.queueStatus) {
+        if (!this.ui.mediaEmbed || !this.ui.mediaSelect || !this.ui.loadRandomMedia) {
             return;
         }
         if (this.queue.length == 0) {
@@ -32,17 +31,17 @@ export const APP = {
         }
         let m = null;
         if (!selected) {
-            this.ui.queueStatus.style.display = '';
+            this.ui.mediaSelect.selectedIndex = 0;
             m = this.getRandomMedia();
         }
         else {
-            this.ui.queueStatus.style.display = 'none';
-            m = MEDIA[(_a = this.ui.mediaSelect) === null || _a === void 0 ? void 0 : _a.value];
+            m = MEDIA[parseInt((_a = this.ui.mediaSelect) === null || _a === void 0 ? void 0 : _a.value)];
         }
         let embedCode = this.getEmbedCode(m);
         if (embedCode) {
+            let queuePos = `${MEDIA.length - this.queue.length}`.padStart(`${MEDIA.length}`.length, '0');
+            this.ui.loadRandomMedia.innerHTML = `random [${queuePos}/${MEDIA.length}]`;
             this.ui.mediaEmbed.innerHTML = embedCode;
-            this.ui.queueStatus.innerHTML = `[${MEDIA.length - this.queue.length}/${MEDIA.length}]`;
         }
     },
     getRandomMedia() {
