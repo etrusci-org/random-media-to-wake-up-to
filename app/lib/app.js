@@ -1,6 +1,6 @@
 import { MEDIA } from './data.js';
 export const APP = {
-    debug: true,
+    debug: false,
     queue: [...MEDIA],
     ui: {
         app: document.querySelector('.app'),

@@ -3,7 +3,7 @@ import { MEDIA } from './data.js'
 
 
 export const APP: AppType = {
-    debug: true,
+    debug: false,
     queue: [ ...MEDIA ],
     ui: {
         app: document.querySelector('.app'),
