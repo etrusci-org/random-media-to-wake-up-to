@@ -10,7 +10,7 @@ import { MediaListType } from "./types"
  * title:
  *   - Should not be cryptic.
  *   - Format it to Title Case.
- *   - Remove emitocons and other cosmetics.
+ *   - Remove emoticons and other cosmetics.
  *   - If it's music: <artist> - <song>
  *   - If it's something else: keep it short
  *   - Put it in backticks.

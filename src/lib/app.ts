@@ -49,8 +49,8 @@ export const APP: AppType = {
         let m = null
 
         if (!selected) {
-            this.ui.mediaSelect.selectedIndex = 0
             m = this.getRandomMedia()
+            this.ui.mediaSelect.selectedIndex = 0
         }
         else {
             m = MEDIA[parseInt(this.ui.mediaSelect?.value)]
@@ -61,12 +61,15 @@ export const APP: AppType = {
         if (m && embedCode) {
             let queuePos = `${MEDIA.length - this.queue.length}`.padStart(`${MEDIA.length}`.length, '0')
             this.ui.loadRandomMedia.innerHTML = `load random (${queuePos}/${MEDIA.length})`
-            let embed = `<h2>${m.title}</h2> ${embedCode}`
-            this.ui.mediaEmbed.innerHTML = embed
+            this.ui.mediaEmbed.innerHTML = `<h2>${m.title}</h2> ${embedCode}`
         }
     },
 
     getRandomMedia() {
+        if (this.queue.length == 0) {
+            this.queue = [ ...MEDIA ]
+        }
+
         let k = Math.floor(Math.random() * this.queue.length)
         let item = this.queue[k]
 
@@ -87,7 +90,7 @@ export const APP: AppType = {
         let embedCode = null
 
         if (this.debug) {
-            return `<iframe class="${media.platform}">dummy iframe for debugging</iframe> <code>${JSON.stringify(media)}</code>`
+            return `<code>${JSON.stringify(media)}</code> <iframe class="${media.platform}">dummy iframe for debugging</iframe>`
         }
 
         switch (media.platform) {
