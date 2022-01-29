@@ -36,6 +36,7 @@ export const MEDIA = [
     { title: `High in the Sky (Blunted HipHop Beat)`, platform: 'youtube', slug: `0mpcC_8YQ5g` },
     { title: `Hip Hop 1995 (Mix)`, platform: 'youtube', slug: `S66-QsQJg8I` },
     { title: `Jamal - Keep It Real`, platform: 'youtube', slug: `_gmmvFBGkjc` },
+    { title: `Jeff Mills, Jean-Phi Dary & Prabhu Edouard - Tomorrow Comes The Harvest`, platform: 'youtube', slug: `EahXXV0KlCY` },
     { title: `Johannes Heil - Die Zahl des Tieres`, platform: 'youtube', slug: `F1O8tBPZecA` },
     { title: `Juma - Show me`, platform: 'youtube', slug: `kYk7G-_wqzQ` },
     { title: `Katarakt - LoFi House (Mix)`, platform: 'youtube', slug: `mlUMgZGFCtw` },
