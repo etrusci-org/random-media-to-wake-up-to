@@ -102,6 +102,7 @@ export const MEDIA: MediaListType = [
     { title: `The Smashing Pumpkins - 1979`, platform: 'youtube', slug: `4aeETEoNfOg` },
     { title: `Torch - Kapitel 29`, platform: 'youtube', slug: `MzGs5ueME78` },
     { title: `Torch - Morgen`, platform: 'youtube', slug: `x8eVPRp483E` },
+    { title: `Trans-Central Connection (Mix)`, platform: 'youtube', slug: `rz3JVZbmoCg` },
     { title: `Tribal Jam - 925`, platform: 'youtube', slug: `hZZa7Z1oG38` },
     { title: `Trife Life (Oldschool HipHop Instrumental)`, platform: 'youtube', slug: `VhtNsMx66lE` },
     { title: `U_Know (Olive Oil x Miles Word) - In A Row`, platform: 'youtube', slug: `Z8utqVZ5J7I` },
