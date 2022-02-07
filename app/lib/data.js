@@ -63,6 +63,7 @@ export const MEDIA = [
     { title: `Oldy Clap Recordz - Bloqué En 90`, platform: 'youtube', slug: `gp7m0WvmRBI` },
     { title: `Oteck instrumental - Crazy beat`, platform: 'youtube', slug: `RWMK9vS1N00` },
     { title: `Outkast - Ms. Jackson`, platform: 'youtube', slug: `MYxAiK6VnXw` },
+    { title: `Peshay Studio Set (Mix)`, platform: 'youtube', slug: `JK8ilaPZbKE` },
     { title: `Pharoahe Monch - F*** You`, platform: 'youtube', slug: `4FqbkKh8mro` },
     { title: `Pushin On High (Oldschool HipHop Instrumental)`, platform: 'youtube', slug: `oOW9DfiGAn4` },
     { title: `Robert Glasper - So Beautiful (Live)`, platform: 'youtube', slug: `GS2Y_CkaXP0` },
