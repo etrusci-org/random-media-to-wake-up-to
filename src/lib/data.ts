@@ -55,6 +55,7 @@ export const MEDIA: MediaListType = [
     { title: `Endless Summer (Blunted HipHop Instrumental)`, platform: 'youtube', slug: `JN7afZnny-o` },
     { title: `Extra Produktionen - The Mothership`, platform: 'youtube', slug: `nZ5kwd3-Tr0` },
     { title: `Fernanda Pistelli Live @ Universo Paralello Festival 2020`, platform: 'youtube', slug: `4ImCuGValoo` },
+    { title: `Fonki Cheff - 90s Classic Hip Hop Mix`, platform: 'youtube', slug: `rHlltz3xhGI` },
     { title: `Funky Notes - Never Knew`, platform: 'youtube', slug: `AauqU7Rm8Xg` },
     { title: `Gabriel Garzón-Montano - Everything Is Everything`, platform: 'youtube', slug: `Z2WH42MLgUE` },
     { title: `Gabriel Garzón-Montano - Golden Wings`, platform: 'youtube', slug: `l4LFawdddFE` },
