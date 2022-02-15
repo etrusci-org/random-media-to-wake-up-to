@@ -1,6 +1,3 @@
-import { MediaListType } from "./types"
-
-
 /**
  * MEDIA Guidelines
  *

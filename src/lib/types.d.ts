@@ -1,4 +1,4 @@
-export type AppType = {
+type AppType = {
     debug: boolean
     queue: MediaListType
     ui: {
@@ -13,12 +13,12 @@ export type AppType = {
     getEmbedCode(media: MediaItemType | undefined): string | null
 }
 
-export type MediaPlatformType = 'bandcamp' | 'soundcloud' | 'youtube'
+type MediaPlatformType = 'bandcamp' | 'soundcloud' | 'youtube'
 
-export type MediaItemType = {
+type MediaItemType = {
     platform: MediaPlatformType
     slug: string
     title: string
 } | null
 
-export type MediaListType = MediaItemType[]
+type MediaListType = MediaItemType[]

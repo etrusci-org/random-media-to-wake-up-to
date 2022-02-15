@@ -1,4 +1,3 @@
-import { AppType } from './types'
 import { MEDIA } from './data.js'
 
 
