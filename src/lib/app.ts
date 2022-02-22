@@ -58,7 +58,7 @@ export const APP: AppType = {
         let embedCode = this.getEmbedCode(m)
 
         if (m && embedCode) {
-            let queuePos = `${MEDIA.length - this.queue.length}`.padStart(`${MEDIA.length}`.length, '0')
+            let queuePos = MEDIA.length - this.queue.length
             this.ui.loadRandomMedia.innerHTML = `load random (${queuePos}/${MEDIA.length})`
             this.ui.mediaEmbed.innerHTML = `<h2>${m.title}</h2> ${embedCode}`
         }
