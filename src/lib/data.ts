@@ -60,6 +60,7 @@ export const MEDIA: MediaListType = [
     { title: `Hanna - Sometimes (Karol XVII & MB Valence Remix)`, platform: 'youtube', slug: `INxh_eCFEpo` },
     { title: `High in the Sky (Blunted HipHop Beat)`, platform: 'youtube', slug: `0mpcC_8YQ5g` },
     { title: `Hip Hop 1995 (Mix)`, platform: 'youtube', slug: `S66-QsQJg8I` },
+    { title: `Intelligent Drum & Bass - Selected Works (1994-2000)`, platform: 'youtube', slug: `1zGaTE2AmsU` },
     { title: `Jamal - Keep It Real`, platform: 'youtube', slug: `_gmmvFBGkjc` },
     { title: `Jeff Mills, Jean-Phi Dary & Prabhu Edouard - Tomorrow Comes The Harvest`, platform: 'youtube', slug: `EahXXV0KlCY` },
     { title: `Johannes Heil - Die Zahl des Tieres`, platform: 'youtube', slug: `F1O8tBPZecA` },
