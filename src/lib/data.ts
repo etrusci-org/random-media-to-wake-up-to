@@ -89,6 +89,7 @@ export const MEDIA: MediaListType = [
     { title: `Oldy Clap Recordz - Bloqué En 90`, platform: 'youtube', slug: `gp7m0WvmRBI` },
     { title: `Oteck instrumental - Crazy beat`, platform: 'youtube', slug: `RWMK9vS1N00` },
     { title: `Outkast - Ms. Jackson`, platform: 'youtube', slug: `MYxAiK6VnXw` },
+    { title: `Pad Chennington - Vaporwave & Future Funk & House DJ Mix`, platform: 'youtube', slug: `iBwohlOvzHc` },
     { title: `Peshay Studio Set (Mix)`, platform: 'youtube', slug: `JK8ilaPZbKE` },
     { title: `Pharoahe Monch - F*** You`, platform: 'youtube', slug: `4FqbkKh8mro` },
     { title: `Pushin On High (Oldschool HipHop Instrumental)`, platform: 'youtube', slug: `oOW9DfiGAn4` },
