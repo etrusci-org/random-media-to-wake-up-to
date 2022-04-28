@@ -12,14 +12,16 @@ export const APP: AppType = {
     },
 
     main() {
-        if (!this.ui.app) {
+        if (!this.ui.app ||
+            !this.ui.loadRandomMedia ||
+            !this.ui.mediaSelect) {
             return
         }
 
         this.ui.app.style.display = 'block'
 
-        this.ui.loadRandomMedia?.addEventListener('click', () => this.loadMedia())
-        this.ui.mediaSelect?.addEventListener('change', () => this.loadMedia(true))
+        this.ui.loadRandomMedia.addEventListener('click', () => this.loadMedia())
+        this.ui.mediaSelect.addEventListener('change', () => this.loadMedia(true))
 
         for (const k in MEDIA) {
             if (MEDIA[k]) {
@@ -27,7 +29,7 @@ export const APP: AppType = {
                 opt.value = k
                 opt.innerHTML = truncStr(`${MEDIA[k]?.title}`, 40)
                 opt.title = `${MEDIA[k]?.title}`
-                this.ui.mediaSelect?.append(opt)
+                this.ui.mediaSelect.append(opt)
             }
         }
 
@@ -52,7 +54,7 @@ export const APP: AppType = {
             this.ui.mediaSelect.selectedIndex = 0
         }
         else {
-            m = MEDIA[parseInt(this.ui.mediaSelect?.value)]
+            m = MEDIA[parseInt(this.ui.mediaSelect.value)]
         }
 
         let embedCode = this.getEmbedCode(m)
