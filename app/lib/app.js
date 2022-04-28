@@ -9,26 +9,27 @@ export const APP = {
         mediaSelect: document.querySelector('.mediaSelect'),
     },
     main() {
-        var _a, _b, _c, _d, _e;
-        if (!this.ui.app) {
+        var _a, _b;
+        if (!this.ui.app ||
+            !this.ui.loadRandomMedia ||
+            !this.ui.mediaSelect) {
             return;
         }
         this.ui.app.style.display = 'block';
-        (_a = this.ui.loadRandomMedia) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => this.loadMedia());
-        (_b = this.ui.mediaSelect) === null || _b === void 0 ? void 0 : _b.addEventListener('change', () => this.loadMedia(true));
+        this.ui.loadRandomMedia.addEventListener('click', () => this.loadMedia());
+        this.ui.mediaSelect.addEventListener('change', () => this.loadMedia(true));
         for (const k in MEDIA) {
             if (MEDIA[k]) {
                 let opt = document.createElement('option');
                 opt.value = k;
-                opt.innerHTML = truncStr(`${(_c = MEDIA[k]) === null || _c === void 0 ? void 0 : _c.title}`, 40);
-                opt.title = `${(_d = MEDIA[k]) === null || _d === void 0 ? void 0 : _d.title}`;
-                (_e = this.ui.mediaSelect) === null || _e === void 0 ? void 0 : _e.append(opt);
+                opt.innerHTML = truncStr(`${(_a = MEDIA[k]) === null || _a === void 0 ? void 0 : _a.title}`, 40);
+                opt.title = `${(_b = MEDIA[k]) === null || _b === void 0 ? void 0 : _b.title}`;
+                this.ui.mediaSelect.append(opt);
             }
         }
         this.loadMedia();
     },
     loadMedia(selected = false) {
-        var _a;
         if (!this.ui.mediaEmbed ||
             !this.ui.mediaSelect ||
             !this.ui.loadRandomMedia) {
@@ -43,7 +44,7 @@ export const APP = {
             this.ui.mediaSelect.selectedIndex = 0;
         }
         else {
-            m = MEDIA[parseInt((_a = this.ui.mediaSelect) === null || _a === void 0 ? void 0 : _a.value)];
+            m = MEDIA[parseInt(this.ui.mediaSelect.value)];
         }
         let embedCode = this.getEmbedCode(m);
         if (m && embedCode) {
