@@ -47,6 +47,7 @@ export const MEDIA = [
     { title: `Kobacchi Ryo - Bilal`, platform: 'youtube', slug: `ulTuqFamxPQ` },
     { title: `Krazy - Riddle`, platform: 'youtube', slug: `TvPupGl4m7M` },
     { title: `KRS-One - Don't Fall For It`, platform: 'youtube', slug: `efMiGjf_bic` },
+    { title: `KRS-One - Raw Hip Hop`, platform: 'youtube', slug: `cDw8U32IqUc` },
     { title: `L'indécis - Soulful (Chillhop Live Session)`, platform: 'youtube', slug: `-NxV_nqD1N0` },
     { title: `Lamb - Trans Fatty Acid (Kruder & Dorfmeister Session Mix)`, platform: 'youtube', slug: `94NU-W-KgxI` },
     { title: `Legend Of 1900 - Piano Duel Enduring Movement`, platform: 'youtube', slug: `ETZJo4TcbQk` },
