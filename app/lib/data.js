@@ -33,7 +33,7 @@ export const MEDIA = [
     { title: `Funky Notes - Never Knew`, platform: 'youtube', slug: `AauqU7Rm8Xg` },
     { title: `Gabriel Garzón-Montano - Everything Is Everything`, platform: 'youtube', slug: `Z2WH42MLgUE` },
     { title: `Gabriel Garzón-Montano - Golden Wings`, platform: 'youtube', slug: `l4LFawdddFE` },
-    { title: `Gift of Gab - The Ride of your Life`, platform: 'youtube', slug: `RFE66SEwo7Y` },
+    { title: `Gift of Gab - The Ride of your Life`, platform: 'youtube', slug: `EBt8QVHzhkc` },
     { title: `Hanna - Sometimes (Karol XVII & MB Valence Remix)`, platform: 'youtube', slug: `INxh_eCFEpo` },
     { title: `High in the Sky (Blunted HipHop Beat)`, platform: 'youtube', slug: `0mpcC_8YQ5g` },
     { title: `Hip Hop 1995 (Mix)`, platform: 'youtube', slug: `S66-QsQJg8I` },
