@@ -55,7 +55,7 @@ export const MEDIA = [
     { title: `Massive Töne - Das und Dies (Remix)`, platform: 'youtube', slug: `rQtChq8GARw` },
     { title: `Michael Jackson - Don't Stop 'Til You Get Enough`, platform: 'youtube', slug: `yURRmWtbTbo` },
     { title: `Michael Jackson - Leave Me Alone`, platform: 'youtube', slug: `crbFmpezO4A` },
-    { title: `Michel Cleis - La Mezcla (Paul Kalkbrenner Remix)`, platform: 'youtube', slug: `uAYEz5tiLHE` },
+    { title: `Michel Cleis - La Mezcla (Paul Kalkbrenner Remix)`, platform: 'youtube', slug: `jt593vq7_rY` },
     { title: `Mid 90'S Intelligent Drum & Bass (Mix)`, platform: 'youtube', slug: `R_XlJfWakfA` },
     { title: `Modjo - Lady (Hear Me Tonight)`, platform: 'youtube', slug: `vRB1MLGEHSc` },
     { title: `Mononome - Hands Of Time`, platform: 'youtube', slug: `gRPd5oWTL2M` },
