@@ -104,7 +104,7 @@ export const APP: AppType = {
             break
 
             case 'youtube':
-                embedCode = `<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/${media.slug}" allow="encrypted-media;"></iframe>`
+                embedCode = `<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/${media.slug}" allow="encrypted-media; fullscreen;"></iframe>`
             break
 
             // TODO: Add more platforms which don't require the user to login to consume the media.
