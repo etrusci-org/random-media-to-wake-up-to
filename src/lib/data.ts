@@ -114,7 +114,6 @@ export const MEDIA: MediaListType = [
     { title: `The Horrorist - One Night In New York City`, platform: 'youtube', slug: `oVgjC5Gw8y0` },
     { title: `The Smashing Pumpkins - 1979`, platform: 'youtube', slug: `4aeETEoNfOg` },
     { title: `Tom Middleton - Shinkansen`, platform: 'youtube', slug: `CU2rg6aeKh0` },
-    { title: `Tom Middleton - Shinkansen`, platform: 'youtube', slug: `CU2rg6aeKh0` },
     { title: `Tool - Bottom (Live In Oakland, CA - 12-31-'95)`, platform: 'youtube', slug: `Cy2qIulPiMA` },
     { title: `Torch - Kapitel 29`, platform: 'youtube', slug: `MzGs5ueME78` },
     { title: `Torch - Morgen`, platform: 'youtube', slug: `x8eVPRp483E` },
