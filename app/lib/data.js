@@ -46,6 +46,7 @@ export const MEDIA = [
     { title: `Johannes Heil - Die Zahl des Tieres`, platform: 'youtube', slug: `F1O8tBPZecA` },
     { title: `Juma - Show me`, platform: 'youtube', slug: `kYk7G-_wqzQ` },
     { title: `Katarakt - LoFi House (Mix)`, platform: 'youtube', slug: `mlUMgZGFCtw` },
+    { title: `Kendrick Lamar - How Much A Dollar Cost`, platform: 'youtube', slug: `y8kEiL81_R4` },
     { title: `King Gizzard & The Lizard Wizard - Black Hot Soup (DJ Shadow "My Own Reality" Re-Write)`, platform: 'youtube', slug: `MJkbQLVeFPs` },
     { title: `Kobacchi Ryo - Bilal`, platform: 'youtube', slug: `ulTuqFamxPQ` },
     { title: `Krazy - Riddle`, platform: 'youtube', slug: `TvPupGl4m7M` },
